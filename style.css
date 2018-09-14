@@ -36,9 +36,8 @@ header {
   overflow: auto;
   border: none;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
-  grid-gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 1% 0%;
 }
@@ -53,7 +52,6 @@ header {
   border-radius: 25px;
   border: 2px solid #9fa09d;
   width: 280px;
-  height: 410px;
   overflow: hidden;
 }
 
@@ -71,17 +69,25 @@ img:hover {
     filter: alpha(opacity=100);
 }
 
-h2 {
+.person h2 {
   color: #2252c1;
   font-family: Tahoma, Geneva, sans-serif;
   text-align: center;
-  margin-top: 8px
+  margin-top: 8px;
+  margin-bottom: 8px
 }
 
 .footer {
   width: 100%;
-  height: 50px;
+  height: 80px;
   padding: 20px 0px 20px 0px;
+}
+
+.footer h2 {
+  color: #2252c1;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .snow {
